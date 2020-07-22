@@ -1,0 +1,13 @@
+1) Take a clone of this repository or download and extract it.
+
+2) After cloning open terminal and follow path and go till click-media .
+
+3) After that run the command    npm i  .it will take some time 10 to 15 minutes.
+
+4) After that run the project using command  npm start.
+
+5) I have used react redux in this project for managing the state.
+
+
+
+
