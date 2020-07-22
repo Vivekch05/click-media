@@ -8,6 +8,9 @@
 
 5) I have used react redux in this project for managing the state.
 
+6) For map:- inside folder of src/components/SimpleMap component please provide your on google map api in bottom of the component i had mentioned 
+   it via comment. then it will show the exact map.
+
 
 
 
