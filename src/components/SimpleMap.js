@@ -3,10 +3,10 @@ import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
 
 const mapStyles = {
   maxWidth: "100%",
-  maxHeight: 360,
+  maxHeight: 300,
   border: "1px solid grey",
   borderRadius: "30px",
-  margin: "50px 50px 100px 50px"
+  margin: "10px 30px 10px 10px"
 };
 
 class SimpleMap extends Component {

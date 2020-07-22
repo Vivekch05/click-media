@@ -7,9 +7,9 @@ class ChatLayoutPage extends Component {
         console.log(this.props.chatListItem);
         return (
             <div style={{
-                position: 'inherit',
-                overflow: 'auto',
-                maxHeight: 250,
+                maxHeight: 280,
+                overflow:"auto",
+                position:"relative",
             }}>
                 <div style={{ float: "left" }}>
                     <p style={{ backgroundColor: "#ECF0F1", textAlign: "center", padding: "10px", color: "grey" }}> Hii Vivek ! </p>

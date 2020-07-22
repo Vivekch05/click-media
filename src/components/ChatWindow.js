@@ -26,8 +26,8 @@ class ChatWindow extends React.Component {
     render() {
         return (
             <>
-                <div style={{ maxWidth: 960, float: "right", margin: "420px 25px 20px 0" }}>
-                    <Accordion>
+                <div style={{ width: 300, float: "right", margin: "400px 20px 5px 0" }}>
+                    <Accordion style={{position:"absolute",bottom:"1px"}}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon style={{ color: "white", fontSize: "30px" }} />}
                             aria-controls="panel1a-content"
@@ -43,8 +43,8 @@ class ChatWindow extends React.Component {
                         </AccordionSummary>
                         <List style={{
                             position: 'relative',
-                            overflow: 'auto',
-                            maxHeight: 100,
+                            overflowY: 'auto',
+                            maxHeight: 300,
                         }}>
                             {this.props.listItem.map((item, index) => (
                                 index === 0 || index === 2 || index === 3 || index === 7 || index === 8 || index === 10 ?
@@ -60,7 +60,7 @@ class ChatWindow extends React.Component {
                                         <ListItemText primary={item.name} />
                                         <ListItemAvatar>
                                             <Avatar style={{ backgroundColor: "white" }}>
-                                                <FiberManualRecordRoundedIcon style={{ color: "darkgreen", fontSize: "20px" }} />
+                                                <FiberManualRecordRoundedIcon style={{ color: "#2ECC71", fontSize: "20px" }} />
                                             </Avatar>
                                         </ListItemAvatar>
                                     </ListItem>
@@ -85,7 +85,7 @@ class ChatWindow extends React.Component {
                         </List>
                     </Accordion>
                 </div>
-                <Modal show={this.state.show} onHide={this.handleClose} style={{ margin: "530px 0 0 200px" }}>
+                <Modal show={this.state.show} onHide={this.handleClose} style={{ margin: "340px 0 0 250px",position:"absolute" }}>
                     {
                         this.props.chatListItem.map((item) => (
                             <div>

@@ -25,7 +25,7 @@ class DialogModal extends React.Component {
         };
         return (
             <div>
-                <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open} style={{ position: "relative", float: "right", margin: "80px 50px 0 0 " }}>
+                <Dialog onClose={handleClose} aria-labelledby="simple-dialog-title" open={open} style={{ position: "relative", float: "right", margin: "80px 5px 0 0 " }}>
                     {
                         profileListItem.map((item) => (
                             <DialogTitle id="simple-dialog-title">

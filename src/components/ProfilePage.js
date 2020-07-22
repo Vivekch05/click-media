@@ -20,7 +20,7 @@ class ProfilePage extends Component {
     render() {
         console.log(this.props.profileListItem);
         return (
-            <div style={{ maxWidth: "100%", height: "auto", margin: "20px" }}>
+            <div style={{ Width: "100%", height: "100px", margin: "20px 20px -10px 20px"}}>
 
                 {
                     this.props.profileListItem.map((item) =>
