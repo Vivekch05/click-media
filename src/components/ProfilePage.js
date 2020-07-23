@@ -15,12 +15,10 @@ class ProfilePage extends Component {
     handleProfile = () => {
         this.setState({ show: true })
     }
-
-
     render() {
         console.log(this.props.profileListItem);
         return (
-            <div style={{ Width: "100%", height: "100px", margin: "20px 20px -10px 20px"}}>
+            <div style={{ Width: "100%", margin: "20px 20px -10px 20px",overflow:"hidden"}}>
 
                 {
                     this.props.profileListItem.map((item) =>
