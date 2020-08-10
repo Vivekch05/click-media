@@ -8,7 +8,7 @@ export default class HomePage extends Component {
             <HashRouter>
                 <div>
                     <Layout fixedDrawer >
-                        <Drawer style={{ background: "linear-gradient(to bottom, #3333cc 0%, #6600cc 100%)" }}>
+                        <Drawer style={{ background: "linear-gradient(to bottom, #000099 30%, #0099cc 70%)" }}>
                             <Navigation style={{ marginTop: "250px" }}>
                                 <Link style={{ color: 'black', fontSize: '18px', fontWeight: 'bold', textDecoration: "none", }} to="/">Profile</Link>
                                 <Link style={{ color: 'black', fontSize: '18px', fontWeight: 'bold', textDecoration: "none", }} to="/Posts">Posts</Link>

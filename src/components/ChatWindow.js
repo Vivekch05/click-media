@@ -85,7 +85,7 @@ class ChatWindow extends React.Component {
                         </List>
                     </Accordion>
                 </div>
-                <Modal show={this.state.show} onHide={this.handleClose} style={{ margin: "340px 0 0 250px",position:"absolute" }}>
+                <Modal show={this.state.show} onHide={this.handleClose} style={{top:"370px",display:"block",position:"sticky"}} size="sm" >
                     {
                         this.props.chatListItem.map((item) => (
                             <div>

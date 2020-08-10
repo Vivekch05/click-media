@@ -16,13 +16,13 @@ class LandingPage extends Component {
     }
     render() {
         return (
-            <>
+            <div>
                 {
                     this.props.listItem.length !== 0 ?
                         <div>
                             {
                                 this.state.show !== true ?
-                                    <div style={{ margin: "100px auto", border: "1px solid white", borderRadius: "15px", maxWidth: 720 }} className="container">
+                                    <div style={{ margin: "100px auto", border: "1px solid white", borderRadius: "15px", maxWidth: 720,backgroundColor:"white" }} className="container">
                                         <Typography style={{ textAlign: "center", color: "grey", fontSize: "25px", padding: "40px", backgroundColor: "#F4F6F7 ", borderTopLeftRadius: "15px", borderTopRightRadius: "15px" }}>
                                             Select an account</Typography>
                                         <List style={{
@@ -33,7 +33,7 @@ class LandingPage extends Component {
                                             {
                                                 this.props.listItem.map((item =>
                                                     <div>
-                                                        <ListItem button onClick={() => { this.props.getProfile(this.props.listItem, item.id); this.setState({ show: true }); }}>
+                                                        <ListItem button onClick={() => { this.props.getProfile(this.props.listItem, item.id); this.setState({ show: true }); }} style={{backgroundColor:"white"}}>
                                                             <ListItemAvatar>
                                                                 <Avatar style={{ backgroundColor: "white" }}>
                                                                     {/* <PersonIcon /> */}
@@ -63,7 +63,7 @@ class LandingPage extends Component {
                             </div>
                         </div>
                 }
-            </>
+            </div>
 
 
         )

@@ -6,27 +6,32 @@ class ChatLayoutPage extends Component {
     render() {
         console.log(this.props.chatListItem);
         return (
+            <>
             <div style={{
-                maxHeight: 280,
+                width:"100%",
                 overflow:"auto",
-                position:"relative",
+                backgroundColor:"white",
+                height:"200px",
+                padding:"5px",
+                marginRight:"0px"
             }}>
-                <div style={{ float: "left" }}>
-                    <p style={{ backgroundColor: "#ECF0F1", textAlign: "center", padding: "10px", color: "grey" }}> Hii Vivek ! </p>
-                    <p style={{ backgroundColor: "#ECF0F1", textAlign: "center", padding: "10px", color: "grey" }}>How are You? </p>
+                <div style={{width:"100%"}}>
+                    <p style={{ backgroundColor: "#ECF0F1", padding: "10px",margin:"5px 120px 5px 0", color: "grey" }}> Hii Vivek ! </p>
+                    <p style={{ backgroundColor: "#ECF0F1", padding: "10px",margin:"5px 120px 5px 0", color: "grey" }}>How are You? </p>
                 </div>
-                <div style={{ float: "right", marginTop: "80px" }}>
-                    <p style={{ backgroundColor: "#ECF0F1", textAlign: "center", padding: "10px", color: "grey" }}> Hello Sam ! </p>
-                    <p style={{ backgroundColor: "#ECF0F1", textAlign: "center", padding: "10px", color: "grey" }}>I am fine ;) </p>
-                    <p style={{ backgroundColor: "#ECF0F1", textAlign: "center", padding: "10px", color: "grey", marginBottom: "50px" }}>What about You? </p>
+                <div style={{width:"100%"}}>
+                    <p style={{ backgroundColor: "#ECF0F1",margin:"5px 0 5px 120px", padding: "10px", color: "grey" }}> Hello Sam ! </p>
+                    <p style={{ backgroundColor: "#ECF0F1",margin:"5px 0 5px 120px", padding: "10px", color: "grey" }}>I am fine ;) </p>
+                    <p style={{ backgroundColor: "#ECF0F1",margin:"5px 0 5px 120px", padding: "10px", color: "grey"}}>What about You? </p>
                 </div>
-                <div style={{ marginTop: "250px", position: "absolute" }}>
+                </div>
+                <div>
                     <Divider />
-                    <Avatar style={{ backgroundColor: "white", marginLeft: "420px", color: "blue", fontSize: 30 }}>
+                    <Avatar style={{ backgroundColor: "white",float:"right", color: "blue", fontSize: 30 }}>
                         <SendIcon />
                     </Avatar>
                 </div>
-            </div>
+                </>
         )
     }
 }

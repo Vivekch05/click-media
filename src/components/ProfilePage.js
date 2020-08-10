@@ -18,7 +18,7 @@ class ProfilePage extends Component {
     render() {
         console.log(this.props.profileListItem);
         return (
-            <div style={{ Width: "100%", margin: "20px 20px -10px 20px",overflow:"hidden"}}>
+            <div style={{ Width: "100%", margin: "",padding:"12px",overflow:"hidden",backgroundColor:"white"}}>
 
                 {
                     this.props.profileListItem.map((item) =>
@@ -31,7 +31,7 @@ class ProfilePage extends Component {
                                     </span>
                                 </span>
                             </div>
-                            <Row style={{ marginTop: "30px", paddingTop: "50px", borderTop: "1px solid grey", display: "flex", flexWrap: "wrap" }}>
+                            <Row style={{ marginTop: "20px", paddingTop: "50px", borderTop: "1px solid grey", display: "flex", flexWrap: "wrap" }}>
                                 <Col md={4} style={{ borderRight: "1px solid black" }}>
                                     <div style={{ textAlign: "center" }}>
                                         <img src={item.profilepicture}
